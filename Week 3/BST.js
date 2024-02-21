@@ -47,9 +47,9 @@ class BinarySearchTree {
       if(root.value === value) {
         return true
       } else if(value < root.value) {
-        this.search(root.left, value)
+        return this.search(root.left, value)
       } else {
-        this.search(root.right, value)
+        return this.search(root.right, value)
       }
     } 
   }
@@ -136,10 +136,11 @@ class BinarySearchTree {
     return root;
   }
   
-  isBST(node, min, max) {
+  isBST(node, min=-Infinity, max=Infinity) {
     if (!node) {
       return true;
     }
+    // console.log("min: ",min, max);
     if (node.value < min || node.value > max) {
       return false;
     }
@@ -158,22 +159,27 @@ bst.insert(3)
 bst.insert(7)
 bst.insert(12)
 bst.insert(18)
+// let tmp = bst.root.left
+// bst.root.left = new Node(1000)
+// bst.root.left.left = tmp
 
 console.log("isbst",bst.isBST(bst.root));
 
 
 // console.log(bst.search(bst.root, 10));
+// console.log(bst.search(bst.root, 5));
+// console.log(bst.search(bst.root, 15));
+// console.log(bst.search(bst.root, 3));
+// console.log(bst.search(bst.root, 7));
 
 // bst.preOrder(bst.root)
-
+// bst.inOrder(bst.root)
+// bst.postOrder(bst.root)
 // bst.levelOrder()
 
 // console.log(bst.min(bst.root));
+// console.log(bst.max(bst.root));
 
 // bst.deleteNode(bst.root, 15)
 bst.delete(15)
 bst.levelOrder()
-
-
-
-
