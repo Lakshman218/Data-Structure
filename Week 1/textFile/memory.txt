@@ -1,0 +1,24 @@
+Memory Allocation in data structures is the process of reserving space in memory for data storage. 
+This is done dynamically during runtime. Dynamic memory allocation allows programs to allocate memory at runtime, 
+providing flexibility and efficiency when working with data structures of varying sizes.
+
+Stack Allocation:
+
+Memory is allocated from a region known as the stack.
+Generally, used for local variables and function call information.
+Memory is automatically freed when the variable goes out of scope.
+
+Heap Allocation:
+
+Memory is allocated from a larger pool called the heap.
+Used for dynamic memory allocation, especially for objects with unknown or varying sizes.
+Requires manual memory management (deallocation) to prevent memory leaks.
+
+
+A memory leak occurs when a program allocates memory during its execution but fails to release or deallocate that memory properly. 
+As a result, the program continues to consume memory unnecessarily, leading to gradual depletion of available memory resources. 
+Memory leaks can cause a variety of issues, including reduced performance, increased resource usage, and eventual system instability.
+
+Preventing memory leaks involves careful management of memory. This includes deallocating memory when it is no longer needed, 
+using appropriate data structures and algorithms to minimize fragmentation, and employing techniques such as 
+garbage collection to automatically deallocate unused memory 

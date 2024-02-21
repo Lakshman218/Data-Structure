@@ -1,0 +1,8 @@
+Node: A fundamental part of a tree that holds data and may have a link to other nodes (children).
+Root: The topmost node in a tree, serving as the starting point for traversing the tree.
+Parent: A node in a tree that has one or more child nodes.
+Child: A node in a tree that has a parent node.Leaf: A node in a tree that has no children, i.e., it is at the end of a branch.
+Siblings: Nodes that share the same parent in a tree.
+Depth: The level or distance of a node from the root. The root is at depth 0, its children are at depth 1, and so on.
+Height: The length of the longest path from a node to a leaf. The height of the tree is the height of the root node.
+
